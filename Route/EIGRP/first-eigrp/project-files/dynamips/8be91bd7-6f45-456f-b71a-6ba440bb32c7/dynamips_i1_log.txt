@@ -1,0 +1,71 @@
+Aug 02 09:00:32.691 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 02 09:00:32.694 HYPERVISOR: Started on IP = 192.168.193.1, TCP port = 49267.
+Aug 02 09:00:32.762 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 02 09:00:32.762 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips 
+Aug 02 09:00:32.771 GENERAL: working_dir=C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips
+Aug 02 09:00:32.772 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips\8be91bd7-6f45-456f-b71a-6ba440bb32c7 
+Aug 02 09:00:32.773 GENERAL: working_dir=C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips\8be91bd7-6f45-456f-b71a-6ba440bb32c7
+Aug 02 09:00:32.773 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+Aug 02 09:00:32.786 VM: VM R1 created.
+Aug 02 09:00:32.786 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Aug 02 09:00:32.787 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Aug 02 09:00:32.787 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Aug 02 09:00:32.789 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/abolg/GNS3/images/IOS/c3640-js-mz.124-17b.image 
+Aug 02 09:00:32.790 HYPERVISOR: exec_cmd: c3600 set_mac_addr R1 cc01.32dc.0000 
+Aug 02 09:00:32.790 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Aug 02 09:00:32.790 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Aug 02 09:00:32.791 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:00:32.791 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-1FE-TX 
+Aug 02 09:00:32.791 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:00:32.792 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Aug 02 09:00:32.792 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:00:32.792 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4T 
+Aug 02 09:00:34.190 HYPERVISOR: exec_cmd: nio create_udp udp-6f81d2bc-f3c7-4392-8309-c1a0e18f5d32 10001 127.0.0.1 10002 
+Aug 02 09:00:35.176 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 2 0 udp-6f81d2bc-f3c7-4392-8309-c1a0e18f5d32 
+Aug 02 09:00:35.176 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:01:46.226 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Aug 02 09:01:46.249 VM: VM Ghost created.
+Aug 02 09:01:46.250 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/abolg/GNS3/images/IOS/c3640-js-mz.124-17b.image 
+Aug 02 09:01:46.250 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 02 09:01:46.250 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips\c3640-js-mz.124-17b.image-256.ghost' 
+Aug 02 09:01:46.251 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Aug 02 09:01:46.251 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 02 09:01:46.252 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Aug 02 09:01:46.252 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 02 09:01:46.554 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 02 09:01:46.708 VM: VM Ghost shutdown.
+Aug 02 09:01:46.708 VM: VM Ghost destroyed.
+Aug 02 09:01:46.717 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:01:46.721 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Aug 02 09:01:46.722 HYPERVISOR: exec_cmd: vm start R1 
+Aug 02 09:02:17.075 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 02 09:17:52.298 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Aug 02 09:17:52.319 VM: VM Ghost created.
+Aug 02 09:17:52.319 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/abolg/GNS3/images/IOS/c3640-js-mz.124-17b.image 
+Aug 02 09:17:52.320 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 02 09:17:52.320 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips\c3640-js-mz.124-17b.image-256.ghost' 
+Aug 02 09:17:52.320 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Aug 02 09:17:52.321 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 02 09:17:52.322 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Aug 02 09:17:52.322 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 02 09:17:52.605 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 02 09:17:52.765 VM: VM Ghost shutdown.
+Aug 02 09:17:52.765 VM: VM Ghost destroyed.
+Aug 02 09:17:52.780 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:24:41.161 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Aug 02 09:24:41.177 VM: VM Ghost created.
+Aug 02 09:24:41.178 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/abolg/GNS3/images/IOS/c3640-js-mz.124-17b.image 
+Aug 02 09:24:41.178 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 02 09:24:41.178 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\abolg\GNS3\projects\CCNP\Route\EIGRP\first-eigrp\project-files\dynamips\c3640-js-mz.124-17b.image-256.ghost' 
+Aug 02 09:24:41.179 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Aug 02 09:24:41.179 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 02 09:24:41.180 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Aug 02 09:24:41.180 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 02 09:24:41.452 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 02 09:24:41.611 VM: VM Ghost shutdown.
+Aug 02 09:24:41.611 VM: VM Ghost destroyed.
+Aug 02 09:24:41.626 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:27:49.829 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 02 09:27:49.829 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 02 09:27:49.899 VM: VM R1 shutdown.
+Aug 02 09:27:49.901 HYPERVISOR: exec_cmd: vm extract_config R1 
